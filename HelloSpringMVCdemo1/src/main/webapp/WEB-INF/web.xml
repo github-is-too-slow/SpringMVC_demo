@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!--创建DispatcherServlet中央调度器对象
+        在init()方法中创建SpringMVC容器，并读取配置文件-->
+    <servlet>
+        <servlet-name>springmvc</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+
+        <!--自定义SpringMVC配置文件，默认是：WEB-INF/<servlet-name>-servlet.xml-->
+        <!--classpath代表配置文件根路径src/main/resources/-->
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:springmvc.xml</param-value>
+        </init-param>
+
+        <!--指定在Tomcat启动时创建-->
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>springmvc</servlet-name>
+
+        <!--url-pattern的两种方式：-->
+            <!--1.自定义扩展名*.do、*.action、*.mvc-->
+            <!--2.使用/-->
+        <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
+</web-app>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <!--开启注解扫描-->
+    <context:component-scan base-package="com.billion.controller"></context:component-scan>
+
+    <!--定义视图（路径）解析器-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!--前缀-->
+        <property name="prefix" value="/WEB-INF/view/"></property>
+        <!--扩展名-->
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+
+    <!--开启MVC注解驱动-->
+    <!--框架自动创建HttpMessageConverter消息处理器的8个实现类对象，放入到一个list集合中-->
+    <!--转换的流程是：-->
+    <!--依次遍历list集合中的对象，调用其canWrite()方法，-->
+    <!--如果能转换，则调用write()方法将java对象转换成对应类型-->
+    <mvc:annotation-driven />
+
+    <!--第一种解决静态资源不能访问的方式-->
+    <!--<mvc:default-servlet-handler/>-->
+
+    <!--第二种解决静态资源不能访问的方式-->
+    <mvc:resources mapping="/static/**" location="/static/"/>
+</beans>

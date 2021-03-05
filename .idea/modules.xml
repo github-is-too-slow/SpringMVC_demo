@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/HelloSpringMVCdemo1/Hello-SpringMVC-demo1.iml" filepath="$PROJECT_DIR$/HelloSpringMVCdemo1/Hello-SpringMVC-demo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HelloSpringMVCdemo1/Hello-SpringMVC-demo1.iml" filepath="$PROJECT_DIR$/HelloSpringMVCdemo1/Hello-SpringMVC-demo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HelloSpringMVCdemo2/Hello-SpringMVC-demo2.iml" filepath="$PROJECT_DIR$/HelloSpringMVCdemo2/Hello-SpringMVC-demo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HelloSpringMVCdemo2/Hello-SpringMVC-demo2.iml" filepath="$PROJECT_DIR$/HelloSpringMVCdemo2/Hello-SpringMVC-demo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HelloSpringMVCdemo3/Hello-SpringMVC-demo3.iml" filepath="$PROJECT_DIR$/HelloSpringMVCdemo3/Hello-SpringMVC-demo3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HelloSpringMVCdemo3/Hello-SpringMVC-demo3.iml" filepath="$PROJECT_DIR$/HelloSpringMVCdemo3/Hello-SpringMVC-demo3.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,16 @@
+项目一开发步骤：
+
+1.创建Maven Web工程
+
+2.导入Spring-webmvc依赖、Servlet-api、jsp依赖
+
+3.在项目的web.xml中注册中央调度器DispatcherServlet（SpringMVC中特殊的Servlet）
+
+4.创建一个发起请求的页面Index.jsp
+
+5.创建控制器类，加上@Controller注解，创建对象并加入SpringMVC容器中
+    在类方法上加上@RequestMapping注解
+
+6.创建显示响应结果的.jsp页面
+
+7.创建SpringMVC配置文件：声明组件扫描器，和视图解析器（帮助处理视图）
